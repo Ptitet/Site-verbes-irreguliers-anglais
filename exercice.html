@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Entrainement verbes irréguliers</title>
+        <script src="js/exercice.js" defer></script>
+        <link href="css/exercice.css" rel="stylesheet" type="text/css">
+        <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Révises tes verbes irréguliers !</h1>
+        <p class="pre">
+            Ce site te permet de réviser facilement tous les verbes irréguliers anglais.
+            Tu y trouveras une liste de tous les verbes, et un espace pour t'entrainer.
+        </p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="verbes.html">Liste des verbes</a></li>
+                <li><a href="#" class="active">Exercice</a></li>
+                <li class="about"><a href="about.html">A Propos</a></li>
+            </ul>
+        </nav>
+        <br>
+        <div class="options">
+            <h3>Sélectionnez un mode :</h3>
+            <div class="mode">
+                <input type="radio" name="mode" id="normal" value="normal" checked>
+                <label for="normal">Normal</label>
+            </div>
+            <div class="mode">
+                <input type="radio" name="mode" id="infini" value="infini">
+                <label for="infini">Infini</label>
+            </div>
+            <div class="mode" id="dtime">
+                <input type="radio" name="mode" id="time" value="time">
+                <label for="time">Temps imparti</label>
+            </div>
+            <div class="mode" id="dmax">
+                <input type="radio" name="mode" id="max" value="max">
+                <label for="max">Maximum d'essais</label>
+            </div>
+        </div>
+        <div id="game">
+            <button type="submit" id="start">Commencer</button>
+        </div>
+    </body>
+</html>

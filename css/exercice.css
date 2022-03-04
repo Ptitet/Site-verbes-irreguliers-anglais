@@ -1,0 +1,162 @@
+html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    background-color: rgb(235, 216, 240);
+    text-align: center;
+    margin: 15px;
+}
+
+h1 {
+    font-size: 40px;
+    margin-top: 1.5em;
+}
+
+p {
+    text-align: justify;
+}
+
+nav ul {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+  
+nav ul li {
+    float: left;
+}
+  
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-right: 1px solid rgb(118, 118, 118);
+}
+
+nav ul li:last-child a {
+    border: none;
+}
+
+nav ul li a:hover {
+    background-color: rgb(16, 16, 16);
+}
+
+nav ul li a.active {
+    background-color: #04AA6D;
+}
+
+nav ul li.about {
+    float: right;
+}
+
+.pre {
+    background-color: rgba(6, 253, 253, .5);
+    padding: 20px;
+    border-left: 5px solid rgb(90, 83, 83);
+    border-radius: 3px 10px 10px 3px;
+}
+
+button {
+    background-color: rgb(73, 134, 158);
+    border-radius: 13px;
+    height: 30px;
+    font-size: 19px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(211, 214, 19);
+    display: inline-block;
+    border: none;
+    text-transform: capitalize;
+    width: 150px;
+    cursor: pointer;
+}
+
+.options {
+    margin-bottom: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mode {
+    margin: .5em;
+}
+
+label {
+    padding: 4px 1em;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 6px;
+    background-color: rgb(155, 200, 237);
+}
+
+label:hover {
+    background-color: rgb(94, 202, 238);
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + label {
+    background-color: rgb(55, 255, 55);
+}
+
+input[type="text"] {
+    border: 1px solid black;
+    border-radius: 6px;
+    width: 4em;
+    height: 2.3em;
+    margin-left: 6px;
+    text-align: center;
+}
+
+#dtime, #dmax {
+    display: flex;
+    justify-content: center;
+}
+
+#verb {
+    font-size: 30px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+#stat {
+    font-size: 20px;
+}
+
+#inter {
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+#inp {
+    border-radius: 13px;
+    border: 1px solid black;
+    text-align: center;
+    background-color: white;
+    margin-right: 6px;
+    width: 15em;
+    height: 2.1em;
+}
+
+#finish {
+    height: 9.5em;
+    width: 30em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.fin {
+    text-align: center;
+}
