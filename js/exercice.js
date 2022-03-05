@@ -1,114 +1,5 @@
 const vbs = [
     ['casser', 'break', 'broke', 'broken'],
-    ['choisir', 'choose', 'chose', 'chosen'],
-    ['conduire', 'drive', 'drove', 'driven'],
-    ['manger', 'eat', 'ate', 'eaten'],
-    ['tomber', 'fall', 'fell', 'fallen'],
-    ['interdire', 'forbid', 'forbade', 'forbidden'],
-    ['oublier', 'forget', 'forgot', 'forgotten'],
-    ['pardonner', 'forgive', 'forgave', 'forgiven'],
-    ['geler', 'freeze', 'froze', 'frozen'],
-    ['donner', 'give', 'gave', 'given'],
-    ['(se) cacher', 'hide', 'hid', 'hidden'],
-    ['se promener (cheval, vélo, ...)', 'ride', 'rode', 'ridden'],
-    ['se lever (soleil)', 'rise', 'rose', 'risen'],
-    ['voir', 'see', 'saw', 'seen'],
-    ['secouer / serrer la main', 'shake', 'shook', 'shaken'],
-    ['parler', 'speak', 'spoke', 'spoken'],
-    ['voler / dérober', 'steal', 'stole', 'stolen'],
-    ['prendre', 'take', 'took', 'taken'],
-    ['se réveiller', 'wake', 'woke', 'woken'],
-    ['écrire', 'write', 'wrote', 'written'],
-    ['souffler', 'blow', 'blew', 'blown'],
-    ['voler (oiseau, avion)', 'fly', 'flew', 'flown'],
-    ['grandir', 'grow', 'grew', 'grown'],
-    ['savoir / connaître', 'know', 'knew', 'known'],
-    ['jeter', 'throw', 'threw', 'thrown'],
-    ['faire', 'do', 'did', 'done'],
-    ['aller', 'go', 'went', 'gone'],
-    ['être couché', 'lie', 'lay', 'lain'],
-    ['parier', 'bet', 'bet', 'bet'],
-    ['coûter', 'cost', 'cost', 'cost'],
-    ['couper', 'cut', 'cut', 'cut'],
-    ['frapper', 'hit', 'hit', 'hit'],
-    ['blesser / faire mal', 'hurt', 'hurt', 'hurt'],
-    ['laisser / permettre', 'let', 'let', 'let'],
-    ['poser / mettre', 'put', 'put', 'put'],
-    ['lire', 'read', 'read', 'read'],
-    ['débarasser', 'rid', 'rid', 'rid'],
-    ['fermer', 'shut', 'shut', 'shut'],
-    ['devenir', 'become', 'became', 'become'],
-    ['venir', 'come', 'came', 'come'],
-    ['courrir', 'run', 'ran', 'run'],
-    ['plier', 'bend', 'bent', 'bent'],
-    ['construire', 'build', 'built', 'built'],
-    ['brûler', 'burn', 'burnt', 'burnt'],
-    ['apprendre', 'learn', 'learnt', 'learnt'],
-    ['prêter', 'lend', 'lent', 'lent'],
-    ['envoyer', 'send', 'sent', 'sent'],
-    ['sentir (odorat)', 'smell', 'smelt', 'smelt'],
-    ['épeler', 'spell', 'spelt', 'spelt'],
-    ['dépenser / passer du temps', 'spend', 'spent', 'spent'],
-    ['gâter', 'spoil', 'spoilt', 'spoilt'],
-    ['apporter', 'bring', 'brought', 'brought'],
-    ['acheter', 'buy', 'bought', 'bought'],
-    ['attraper', 'catch', 'caught', 'caught'],
-    ['combattre', 'fight', 'fought', 'fought'],
-    ['enseigner', 'teach', 'taught', 'taught'],
-    ['penser', 'think', 'thought', 'thought'],
-    ['poser à plat', 'lay', 'laid', 'laid'],
-    ['payer', 'pay', 'paid', 'paid'],
-    ['dire', 'say', 'said', 'said'],
-    ['saigner', 'bleed', 'bled', 'bled'],
-    ['élever des animeaux', 'breed', 'bred', 'bred'],
-    ['rêver', 'dream', 'dreamt', 'dreamt'],
-    ['nourrir', 'feed', 'fed', 'fed'],
-    ['ressentir', 'feel', 'felt', 'felt'],
-    ['garder', 'keep', 'kept', 'kept'],
-    ['mener', 'lead', 'led', 'led'],
-    ['se pencher', 'lean', 'leant', 'leant'],
-    ['partir / quitter', 'leave', 'left', 'left'],
-    ['signifier / vouloir dire', 'mean', 'meant', 'meant'],
-    ['rencontrer', 'meet', 'met', 'met'],
-    ['dormir', 'sleep', 'slept', 'slept'],
-    ['balayer', 'sweep', 'swept', 'swept'],
-    ['accrocher', 'hang', 'hung', 'hung'],
-    ['coller', 'stick', 'stuck', 'stuck'],
-    ['piquer (guêpe)', 'sting', 'stung', 'stung'],
-    ['trouver', 'find', 'found', 'found'],
-    ['obtenir', 'get', 'got', 'got'],
-    ['avoir', 'have', 'had', 'had'],
-    ['entendre', 'hear', 'heard', 'heard'],
-    ['tenir', 'hold', 'held', 'held'],
-    ['allumer', 'light', 'lit', 'lit'],
-    ['perdre', 'lose', 'lost', 'lost'],
-    ['faire / fabriquer', 'make', 'made', 'made'],
-    ['vendre', 'sell', 'sold', 'sold'],
-    ['tirer (pistolet) / descendre (quelqu\'un)', 'shoot', 'shot', 'shot'],
-    ['s\'asseoir', 'sit', 'sat', 'sat'],
-    ['glisser', 'slide', 'slid', 'slid'],
-    ['se tenir debout', 'stand', 'stood', 'stood'],
-    ['dire / raconter', 'tell', 'told', 'told'],
-    ['comprendre', 'understand', 'understood', 'understood'],
-    ['gagner (compétition)', 'win', 'won', 'won'],
-    ['tondre', 'mow', 'mowed', 'mown'],
-    ['scier', 'saw', 'sawed', 'sawn'],
-    ['coudre', 'sew', 'sewed', 'sewn'],
-    ['montrer', 'show', 'showed', 'shown'],
-    ['commencer', 'begin', 'began', 'begun'],
-    ['boire', 'drink', 'drank', 'drunk'],
-    ['sonner / téléphoner', 'ring', 'rang', 'rung'],
-    ['rétrécir', 'shrink', 'shrank', 'shrunk'],
-    ['chanter', 'sing', 'sang', 'sung'],
-    ['couler', 'sink', 'sank', 'sunk'],
-    ['nager', 'swim', 'swam', 'swum'],
-    ['mettre au monde', 'bear', 'bore', 'born'],
-    ['supporter', 'bear', 'bore', 'borne'],
-    ['porter (vêtements)', 'wear', 'wore', 'worn'],
-    ['déchirer', 'tear', 'tore', 'torn'],
-    ['jurer', 'swear', 'swore', 'sworn'],
-    ['être', 'be', 'was', 'were', 'been'],
-    ['battre', 'beat', 'beat', 'beaten'],
     ['mordre', 'bite', 'bit', 'bitten']
 ];
 
@@ -126,48 +17,23 @@ function displayTime(ms) {
 }
 
 function finish(t) {
-    document.getElementById('game').childNodes.forEach(e => {
-        e.remove();
-    });
     document.getElementById('verb').remove();
-    const d = document.getElementById('game').insertAdjacentElement('afterbegin', document.createElement('div'));
-    d.id = 'finish';
-    ['temps', 'essais', 'correct', 'faux','pourcentj', 'pourcentf'].map(e => {
-        let el = document.getElementById('finish').insertAdjacentElement('beforeend', document.createElement('p'));
-        el.id = e;
-        el.className = 'fin';
-        switch(e) {
-            case 'temps': {
-                el.innerHTML = `Temps : ${displayTime(Date.now() - t)}`;
-                break;
-            }
-
-            case 'essais': {
-                el.innerHTML = `Nombre d'essais : ${essais}`;
-                break;
-            }
-
-            case 'correct': {
-                el.innerHTML = `Réponses justes : ${correct}`;
-                break;
-            }
-
-            case 'faux': {
-                el.innerHTML = `Réponses fausses : ${faux}`;
-                break;
-            }
-
-            case 'pourcentj': {
-                el.innerHTML = `${Math.floor((correct / essais) * 100)}% de réponses justes`;
-                break;
-            }
-
-            case 'pourcentf': {
-                el.innerHTML = `${100 - Math.floor((correct / essais) * 100)}% de réponses fausses`;
-                break;
-            }
+    document.getElementById('inter').remove();
+    document.getElementById('stat').remove();
+    document.getElementById('game').insertAdjacentElement('afterbegin', document.createElement('table'));
+    document.querySelector('table').insertAdjacentElement('afterbegin', document.createElement('tbody'));
+    const tr1 = document.querySelector('tbody').insertAdjacentElement('afterbegin', document.createElement('tr'));
+    const tr2 = document.querySelector('tbody').insertAdjacentElement('afterbegin', document.createElement('tr'));
+    const arr = [`Temps : ${displayTime(Date.now() - t)}`, `Nombre d'essais : ${essais}`, `Réponses justes : ${correct}`, `Réponses fausses : ${faux}`, `${Math.floor((correct / essais) * 100)}% de réponses justes`, `${100 - Math.floor((correct / essais) * 100)}% de réponses fausses`];
+    for (let i = 0; i < 6; i++) {
+        let current;
+        if (i < 3) {
+            current = tr1.insertAdjacentElement('beforeend', document.createElement('td'));
+        } else {
+            current = tr2.insertAdjacentElement('beforeend', document.createElement('td'));
         }
-    });
+        current.innerHTML = arr[i];
+    }
 }
 
 let verbs = Array.from(vbs),
@@ -214,6 +80,7 @@ document.getElementById('start').addEventListener('click', () => {
 
     document.getElementById('start').remove();
     document.querySelector('.options').remove();
+    document.querySelector('.help').remove();
 
     switch (mode) {
         case 'max': {
