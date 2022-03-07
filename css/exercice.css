@@ -120,6 +120,7 @@ input[type="text"] {
 #dtime, #dmax {
     display: flex;
     justify-content: center;
+    margin: .25em;
 }
 
 #verb {
@@ -208,6 +209,7 @@ div.help ul li:last-child {
 div.help ul li {
     margin: .7em .4em;
 }
+
 span.shelp {
     background-color: rgb(255, 213, 107);
 }

@@ -69,29 +69,11 @@ div.help {
     border-right: none;
     border-bottom: none;
     border-radius: 5px 0 0;
-    padding: .5em;
     box-shadow: 3px 3px 5px black;
+    padding: .5em;
 }
 
 div.help p {
-    margin-top: 0;
-}
-
-div.help ul {
-    text-align: left;
-    padding: 0 1em;
-    margin-bottom: 0;
-}
-
-div.help ul li:last-child {
-    margin-bottom: 0;
-}
-
-div.help ul li {
-    margin: .7em .4em;
-}
-
-div.help ul li a {
-    color: black;
-    text-decoration:underline 1px grey;
+    margin: 0;
+    line-height: 1.5em;
 }

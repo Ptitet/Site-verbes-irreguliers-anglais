@@ -39,6 +39,8 @@ function finish(t) {
 let verbs = Array.from(vbs),
 verb = verbs[Math.floor(Math.random() * verbs.length)],
 
+
+
 essais = 0,
 correct = 0,
 faux = 0,
